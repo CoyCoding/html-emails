@@ -6,9 +6,80 @@
   <title></title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700">
+  <style>
+    /*Desktop*/
+    @media only screen and (min-width: 960px) {
+      .container {
+        width: 960px;
+      }
+
+      .header-left {
+        padding: 20px 0;
+      }
+
+      .hero-image {
+        margin: 14px 0 0 !important;
+      }
+    }
+
+    /*mid*/
+    @media only screen and (max-width: 960px) {
+      .container {
+        width: 600px;
+      }
+    }
+
+    /*moble*/
+    @media only screen and (max-width: 600px) {
+      .container {
+        width: 100px !important;
+      }
+
+      .header-left {
+        width: 100%;
+      }
+
+      .header-right {
+        width: 100%;
+      }
+
+      .lets-row .left-col {
+        width: 50%;
+      }
+
+      .lets-row .mid-col {
+        width: 50%;
+      }
+
+      .lets-row .right-col {
+        width: 100%;
+        align: center;
+      }
+
+      .playstore-table .head-img {
+        width: 100%;
+
+      }
+
+      .picture-table {
+        width: 100px;
+        margin: 50px 0 30px;
+      }
+
+      .playstore-table .left-col {
+        width: 100%;
+        padding: 10px !important;
+      }
+
+      .playstore-table .right-col {
+        width: 100%;
+        padding: 10px !important;
+      }
+    }
+  </style>
 </head>
 
-<body style="background: blue">
+<body style="background: blue; margin: 0; padding: 0;">
   <!--START OF HTML eMAIL-->
   <table width="100%" border="0" cellspacing="0" cellpadding="0">
     <tbody>
@@ -18,10 +89,11 @@
           <table class="container" width="600" align="center" cellspacing="0" cellpadding="0" border="0" style="background: white">
             <!-- START OF MAIN ROW/HERO-->
             <tbody>
-              <tr class="hero">
+              <tr>
                 <td>
                   <!--START OF LEFT COLUMN-->
-                  <table class="container" width="50%" align="left" cellspacing="0" cellpadding="0" border="0" style="
+                  <table class="header-left" width="50%" align="left" cellspacing="0" cellpadding="0" border="0" style="
+                            padding: 20px 0;
                             background: rgb(235,241,246);
                             background: -moz-linear-gradient(-45deg, rgba(235,241,246,1) 0%,rgba(171,211,238,1) 18%,rgba(137,195,235,1) 15%,rgba(127, 196, 98, 1) 100%);
                             background: -webkit-linear-gradient(-45deg, rgba(235,241,246,1) 0%,rgba(171,211,238,1) 18%,rgba(137,195,235,1) 15%,rgba(127, 196, 98, 1) 100%);
@@ -44,11 +116,11 @@
                   </table>
                   <!--END OF LEFT COLUMN -->
                   <!--START OF RIGHT COLUMN -->
-                  <table class="container" width="50%" align="right" cellspacing="0" cellpadding="0" border="0">
+                  <table class="header-right" width="50%" align="right" cellspacing="0" cellpadding="0" border="0">
                     <tbody>
                       <tr>
                         <td style="padding: 20px; font-size: 14px;">
-                          <table class="container" width="100%" align="center" cellspacing="0" cellpadding="0" border="0" style="font-family: 'Roboto', 'Arial', 'Helvetica', 'sans-serif';">
+                          <table class="menu-table" width="100%" align="center" cellspacing="0" cellpadding="0" border="0" style="font-family: 'Roboto', 'Arial', 'Helvetica', 'sans-serif';">
                             <tbody>
                               <tr>
                                 <td align="center">
@@ -67,7 +139,7 @@
                       </tr>
                       <tr>
                         <td align="center" valign="bottom">
-                          <img src="img/smartwatch.png">
+                          <img class="hero-image" style="margin: 40px 0 0;" src="img/smartwatch.png">
                         </td>
                       </tr>
                     </tbody>
@@ -78,14 +150,14 @@
               <!-- END OF MAIN ROW/HERO-->
 
               <!-- START OF MAIN 2-->
-              <tr class="info">
-                <td align="center" style="font-family: 'Roboto', 'Arial', 'Helvetica', 'sans-serif';">
-                  <h3 style="font-size: 2rem;font-weight: 300; margin: 100px 0 50px;">Hero lets you...</h3>
-                  <table class="container" width="33.33%" align="left" cellspacing="0" cellpadding="0" border="0">
+              <tr>
+                <td class="lets-row" align="center" style="font-family: 'Roboto', 'Arial', 'Helvetica', 'sans-serif';">
+                  <h3 style="font-size: 2rem;font-weight: 300; margin: 100px 0 30px;">Hero lets you...</h3>
+                  <table class="left-col" width="33.33%" align="left" cellspacing="0" cellpadding="0" border="0">
                     <tbody>
                       <tr>
                         <td>
-                          <table class="container" width="" align="center" cellspacing="0" cellpadding="0" border="0" style="margin-left: 40px;">
+                          <table class="icon-contaner" width="" align="center" cellspacing="0" cellpadding="0" border="0" style="margin-top: 20px; padding: 0 20px 0 0;">
                             <tbody>
                               <tr>
                                 <td>
@@ -111,11 +183,11 @@
                       </tr>
                     </tbody>
                   </table>
-                  <table class="container" width="33.33%" align="left" cellspacing="0" cellpadding="0" border="0">
+                  <table class="middle-col" width="33.33%" align="left" cellspacing="0" cellpadding="0" border="0">
                     <tbody>
                       <tr>
                         <td>
-                          <table class="container" width="" align="center" cellspacing="0" cellpadding="0" border="0" style="margin-left: 40px;">
+                          <table class="icon-container" width="" align="center" cellspacing="0" cellpadding="0" border="0" style="margin-top: 20px; padding: 0 20px 0 0;">
                             <tbody>
                               <tr>
                                 <td>
@@ -141,11 +213,11 @@
                       </tr>
                     </tbody>
                   </table>
-                  <table class="container" width="33.33%" align="left" cellspacing="0" cellpadding="0" border="0">
+                  <table class="right-col" width="33.33%" align="left" cellspacing="0" cellpadding="0" border="0">
                     <tbody>
                       <tr>
                         <td>
-                          <table class="container" width="" align="center" cellspacing="0" cellpadding="0" border="0" style="margin-left: 35px;">
+                          <table class="icon-container" width="" align="center" cellspacing="0" cellpadding="0" border="0" style="margin-top: 20px; padding: 0 20px 0 0;">
                             <tbody>
                               <tr>
                                 <td>
@@ -178,11 +250,11 @@
               <!-- START OF picture-info-->
               <tr class="google-store" style="font-size: 1.5rem; font-family: 'Roboto', 'Arial', 'Helvetica', 'sans-serif'; font-weight: 200; text-transform: capitalize;">
                 <td>
-                  <table class="container" width="100%" align="center" cellspacing="0" cellpadding="0" border="0" style="margin: 100px 0 50px;">
+                  <table class="playstore-table" width="100%" align="center" cellspacing="0" cellpadding="0" border="0" style="margin: 100px 0 50px;">
                     <tbody>
                       <tr align="center">
                         <td>
-                          <img src="/img/image_head.jpg">
+                          <img class="head-img" src="/img/image_head.jpg">
                         </td>
                       </tr>
                       <tr>
@@ -195,7 +267,7 @@
                       </tr>
                       <tr>
                         <td>
-                          <table class="container" width="50%" align="left" cellspacing="0" cellpadding="0" border="0" style="padding: 0 10px 20px 20px;">
+                          <table class="left-col" width="50%" align="left" cellspacing="0" cellpadding="0" border="0" style="padding: 0 10px 20px 20px;">
                             <tbody>
                               <tr>
                                 <td>
@@ -208,7 +280,7 @@
 
                             </tbody>
                           </table>
-                          <table class="container" width="50%" align="left" cellspacing="0" cellpadding="0" border="0" style="padding: 0 20px 20px 10px;">
+                          <table class="right-col" width="50%" align="left" cellspacing="0" cellpadding="0" border="0" style="padding: 0 20px 20px 10px;">
                             <tbody>
                               <tr>
                                 <td>
@@ -225,7 +297,7 @@
                       </tr>
                       <tr>
                         <td>
-                          <table class="container" width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+                          <table class="icon-row" width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
                             <tr>
                               <td align="right" width="50%">
                                 <img style="margin: 0 10px 0 0px;" src="/img/playstore.png">
@@ -246,11 +318,11 @@
               <!-- START OF picture row-->
               <tr class="picture-row">
                 <td>
-                  <table class="container" width="600" align="center" cellspacing="0" cellpadding="0" border="0" style="">
+                  <table class="picture-table" width="600" align="center" cellspacing="0" cellpadding="0" border="0" style="">
                     <tbody>
                       <tr>
-                        <td style="padding: 40px 0;background: #141414;">
-                          <img width="600px" src="/img/one_app.jpg">
+                        <td width="100%" style="padding: 40px 0;background: #141414;">
+                          <img width="100%" src="/img/one_app.jpg">
                         </td>
                       </tr>
                     </tbody>
@@ -263,7 +335,7 @@
               <tr class="join-together" style="font-size: 1.5rem; font-family: 'Roboto', 'Arial', 'Helvetica', 'sans-serif';
               font-weight: 200;">
                 <td>
-                  <table class="container" width="100%" align="center" cellspacing="0" cellpadding="0" border="0" style="padding: 50px 0;">
+                  <table class="join-together-table" width="100%" align="center" cellspacing="0" cellpadding="0" border="0" style="padding: 50px 0;">
                     <tbody>
                       <tr>
                         <td align="center">
@@ -274,7 +346,7 @@
                       <tr>
                         <td style="">
                           <!--col-1 of 3-->
-                          <table class=" container" width="33.33%" align="left" cellspacing="0" cellpadding="0" border="0">
+                          <table class="right-col" width="33.33%" align="left" cellspacing="0" cellpadding="0" border="0">
                             <tbody>
                               <tr>
                                 <td align="center">
@@ -300,7 +372,7 @@
                           </table>
 
                           <!-- col-2-->
-                          <table class="container" width="33.33%" align="left" cellspacing="0" cellpadding="0" border="0" style="">
+                          <table class="middle-col" width="33.33%" align="left" cellspacing="0" cellpadding="0" border="0" style="">
                             <tbody>
                               <tr>
                                 <td align="center">
@@ -326,7 +398,7 @@
                           </table>
 
                           <!--col 3-->
-                          <table class="container" width="33.33%" align="left" cellspacing="0" cellpadding="0" border="0" style="">
+                          <table class="right-col" width="33.33%" align="left" cellspacing="0" cellpadding="0" border="0" style="">
                             <tbody>
                               <tr>
                                 <td align="center">
@@ -362,15 +434,15 @@
               <tr class="two-by-six" style="background: #f2f2f2; font-size: 1.5rem;
                 font-family: 'Roboto', 'Arial', 'Helvetica', 'sans-serif';  font-weight: 200;">
                 <td style="padding: 20px 0;">
-                  <table class="container" width="100%" align="left" cellspacing="0" cellpadding="0" border="0">
+                  <table class="two-by-six-table" width="100%" align="left" cellspacing="0" cellpadding="0" border="0">
                     <tr>
                       <td style="padding: 20px 0;">
                         <!--1 Columns 50/50-->
-                        <table class="container" width="50%" align="left" cellspacing="0" cellpadding="0" border="0" style="padding: 0 10px 0 20px;">
+                        <table class="info-left" width="50%" align="left" cellspacing="0" cellpadding="0" border="0" style="padding: 0 10px 0 20px;">
                           <tbody>
                             <tr>
                               <td>
-                                <table class="container" width="100%" align="left" cellspacing="0" cellpadding="0" border="0" style="">
+                                <table class="" width="100%" align="left" cellspacing="0" cellpadding="0" border="0" style="">
                                   <tbody>
                                     <tr>
                                       <td>
@@ -402,11 +474,11 @@
                             </tr>
                           </tbody>
                         </table>
-                        <table class="container" width="50%" align="left" cellspacing="0" cellpadding="0" border="0" style="padding: 0 20px 0 10px;">
+                        <table class="info-right" width="50%" align="left" cellspacing="0" cellpadding="0" border="0" style="padding: 0 20px 0 10px;">
                           <tbody>
                             <tr>
                               <td>
-                                <table class="container" width="100%" align="left" cellspacing="0" cellpadding="0" border="0" style="">
+                                <table class="" width="100%" align="left" cellspacing="0" cellpadding="0" border="0" style="">
                                   <tbody>
                                     <tr>
                                       <td>
@@ -446,11 +518,11 @@
                     <tr>
                       <td style="padding: 20px 0;">
                         <!--1 Columns 50/50-->
-                        <table class="container" width="50%" align="left" cellspacing="0" cellpadding="0" border="0" style="padding: 0 10px 0 20px;">
+                        <table class="info-left" width="50%" align="left" cellspacing="0" cellpadding="0" border="0" style="padding: 0 10px 0 20px;">
                           <tbody>
                             <tr>
                               <td>
-                                <table class="container" width="100%" align="left" cellspacing="0" cellpadding="0" border="0" style="">
+                                <table class="" width="100%" align="left" cellspacing="0" cellpadding="0" border="0" style="">
                                   <tbody>
                                     <tr>
                                       <td>
@@ -482,11 +554,11 @@
                             </tr>
                           </tbody>
                         </table>
-                        <table class="container" width="50%" align="left" cellspacing="0" cellpadding="0" border="0" style="padding: 0 20px 0 10px;">
+                        <table class="info-right" width="50%" align="left" cellspacing="0" cellpadding="0" border="0" style="padding: 0 20px 0 10px;">
                           <tbody>
                             <tr>
                               <td>
-                                <table class="container" width="100%" align="left" cellspacing="0" cellpadding="0" border="0" style="">
+                                <table class="" width="100%" align="left" cellspacing="0" cellpadding="0" border="0" style="">
                                   <tbody>
                                     <tr>
                                       <td>
@@ -526,11 +598,11 @@
                     <tr>
                       <td style="padding: 20px 0;">
                         <!--1 Columns 50/50-->
-                        <table class="container" width="50%" align="left" cellspacing="0" cellpadding="0" border="0" style="padding: 0 10px 0 20px;">
+                        <table class="info-left" width="50%" align="left" cellspacing="0" cellpadding="0" border="0" style="padding: 0 10px 0 20px;">
                           <tbody>
                             <tr>
                               <td>
-                                <table class="container" width="100%" align="left" cellspacing="0" cellpadding="0" border="0" style="">
+                                <table class="" width="100%" align="left" cellspacing="0" cellpadding="0" border="0" style="">
                                   <tbody>
                                     <tr>
                                       <td>
@@ -564,11 +636,11 @@
                             </tr>
                           </tbody>
                         </table>
-                        <table class="container" width="50%" align="left" cellspacing="0" cellpadding="0" border="0" style="padding: 0 20px 0 10px;">
+                        <table class="info-right" width="50%" align="left" cellspacing="0" cellpadding="0" border="0" style="padding: 0 20px 0 10px;">
                           <tbody>
                             <tr>
                               <td>
-                                <table class="container" width="100%" align="left" cellspacing="0" cellpadding="0" border="0" style="">
+                                <table class="" width="100%" align="left" cellspacing="0" cellpadding="0" border="0" style="">
                                   <tbody>
                                     <tr>
                                       <td>
@@ -616,7 +688,7 @@
                         background: -webkit-linear-gradient(-45deg,  rgba(127, 196, 98, 1) 0%,rgba(137,195,235,1) 85%, rgba(171,211,238,1) 85%,rgba(235,241,246,1) 100%););
                             background: linear-gradient(135deg, rgba(127, 196, 98, 1) 0%,rgba(137,195,235,1) 85%, rgba(171,211,238,1) 85%,rgba(235,241,246,1) 100%);">
                 <td>
-                  <table class="container" width="100%" align="center" cellspacing="0" cellpadding="0" border="0" style="padding: 40px 0; color: white">
+                  <table class="" width="100%" align="center" cellspacing="0" cellpadding="0" border="0" style="padding: 40px 0; color: white">
                     <tbody align="center">
                       <tr>
                         <td>
@@ -632,7 +704,7 @@
                       </tr>
                       <tr>
                         <td>
-                          <table class="container" align="center" cellspacing="0" cellpadding="0" border="0" style="padding: 30px 0 30px;">
+                          <table class="interested-table" align="center" cellspacing="0" cellpadding="0" border="0" style="padding: 30px 0 30px;">
                             <tr>
                               <td>
                                 <a href="#" style="text-decoration: none; border: white solid 2px; padding: 10px 15px; color: white; text-transform: uppercase; font-size: .9rem;">Request a quote</a>
@@ -647,10 +719,10 @@
               </tr>
               <!-- END OF MORE INFO-->
 
-              <!-- START OF MAIN ROW/HERO-->
+              <!-- START OF MAIN FOOTER-->
               <tr style="font-size: 1rem; font-family: 'Roboto', 'Arial', 'Helvetica', 'sans-serif';">
                 <td>
-                  <table class="container" width="100%" align="left" cellspacing="0" cellpadding="0" border="0" style="padding: 30px 0 20px;">
+                  <table class="footer-table" width="100%" align="left" cellspacing="0" cellpadding="0" border="0" style="padding: 30px 0 20px;">
                     <tr align="center" style="text-transform: uppercase;">
                       <td>
                         <h1 style="margin: 20px 0;">Hero</h1>
@@ -658,7 +730,7 @@
                     </tr>
                     <tr>
                       <td>
-                        <table class="container" width="45%" align="center" cellspacing="0" cellpadding="0" border="0" style="padding: 0 0 30px;">
+                        <table class="icon-table" width="45%" align="center" cellspacing="0" cellpadding="0" border="0" style="padding: 0 0 30px;">
                           <tr>
                             <td align="center">
                               <img src="/img/twitter_icon.png" />
@@ -690,7 +762,7 @@
                   </table>
                 </td>
               </tr>
-              <!-- END OF MAIN ROW/HERO-->
+              <!-- END OF MAIN FOOTER-->
             </tbody>
           </table>
           <!-- END OF CONTAINER-->
