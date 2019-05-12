@@ -39,6 +39,10 @@
         width: 100%;
       }
 
+      .header-left h2 {
+        margin: 20px 0px 20px 50px !important;
+      }
+
       .header-right {
         width: 100%;
       }
@@ -62,8 +66,8 @@
       }
 
       .picture-table {
-        width: 100px;
-        margin: 50px 0 30px;
+        width: 100%;
+        margin: 0;
       }
 
       .playstore-table .left-col {
@@ -75,6 +79,52 @@
         width: 100%;
         padding: 10px !important;
       }
+
+      .playstore-table .icon-row {
+        width: 100%;
+      }
+
+      .playstore-table .icon-row .icon-img {
+        text-align: center;
+        padding: 10px 50px;
+      }
+
+      .playstore-table .icon-row .icon-img img {
+        margin: 0 !important;
+      }
+
+      .picture-row .picture-container {
+        padding: 20px 0 40px !important;
+      }
+
+      .join-together-table .right-col {
+        width: 100%;
+        margin-top: 20px;
+        padding-bottom: 20px;
+      }
+
+      .join-together-table .middle-col {
+        width: 100%;
+        margin-top: 20px;
+        padding-bottom: 20px;
+      }
+
+      .join-together-table .left-col {
+        width: 100%;
+        padding-bottom: 20px;
+      }
+
+      .info-left {
+        width: 100%;
+        padding: 0 10px 0 10px !important;
+      }
+
+      .info-right {
+        width: 100%;
+        padding: 0 10px 0 10px !important;
+      }
+
+
     }
   </style>
 </head>
@@ -297,12 +347,16 @@
                       </tr>
                       <tr>
                         <td>
-                          <table class="icon-row" width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+                          <table class="icon-row" width="50%%" align="left" cellspacing="0" cellpadding="0" border="0">
                             <tr>
-                              <td align="right" width="50%">
+                              <td class="icon-img" align="right">
                                 <img style="margin: 0 10px 0 0px;" src="/img/playstore.png">
                               </td>
-                              <td align="left" width="50%">
+                            </tr>
+                          </table>
+                          <table class="icon-row" width="50%" align="left" cellspacing="0" cellpadding="0" border="0">
+                            <tr>
+                              <td class="icon-img" align="left">
                                 <img style="margin: 0 0 0 10px;" src="/img/playstore.png">
                               </td>
                             </tr>
@@ -316,12 +370,12 @@
               <!-- END OF picture-info-->
 
               <!-- START OF picture row-->
-              <tr class="picture-row">
+              <tr class="picture-row" style="background: #141414;">
                 <td>
                   <table class="picture-table" width="600" align="center" cellspacing="0" cellpadding="0" border="0" style="">
                     <tbody>
                       <tr>
-                        <td width="100%" style="padding: 40px 0;background: #141414;">
+                        <td class="picture-container" width="100%" style="padding: 40px 0 80px;background: #141414;">
                           <img width="100%" src="/img/one_app.jpg">
                         </td>
                       </tr>
@@ -733,22 +787,22 @@
                         <table class="icon-table" width="45%" align="center" cellspacing="0" cellpadding="0" border="0" style="padding: 0 0 30px;">
                           <tr>
                             <td align="center">
-                              <img src="/img/twitter_icon.png" />
+                              <a href="http://www.twitter.com"><img src="/img/twitter_icon.png" /></a>
                             </td>
                             <td align="center">
-                              <img src="/img/facebook_icon.png" />
+                              <a href="http://www.facebook.com"><img src="/img/facebook_icon.png" /></a>
                             </td>
                             <td align="center">
-                              <img src="/img/google_icon.png" />
+                              <a href="http://www.google.com"><img src="/img/google_icon.png" /></a>
                             </td>
                             <td align="center">
-                              <img src="/img/pinterest_icon.png" />
+                              <a href="http://www.pintrest.com"> <img src="/img/pinterest_icon.png" /></a>
                             </td>
                             <td align="center">
-                              <img src="/img/linkedin_icon.png" />
+                              <a href="http://www.linkedin.com"> <img src="/img/linkedin_icon.png" /></a>
                             </td>
                             <td align="center">
-                              <img src="/img/youtube_icon.png" />
+                              <a href="http://www.youtube.com"> <img src="/img/youtube_icon.png" /></a>
                             </td>
                           </tr>
                         </table>
